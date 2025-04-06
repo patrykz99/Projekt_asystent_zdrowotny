@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color:#d8d9cd;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/healthcare_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chat-layout {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px 15px 6px 6px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    background: linear-gradient(to right, rgb(184, 162, 138), #d78426);
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.second-row{
+    font-size: 10px;
+    font-style: italic;
+}
+#refresh{
+    cursor: pointer;
+    font-size: 26px;
+}
+
+#display-box{
+    height: 330px;
+    padding: 10px;
+    overflow-y: auto;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dfd6d6e1;
+    height: 70px;
+    padding-left: 100px;
+    background: #fff;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button{
+    background-color: #d78426;
+    border-color: #d78426;
+    border-radius: 3px;
+    color:#ffffff;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.output-area {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    max-width: 100%; 
+    margin-bottom: 5px; 
+}
+
+.sender-type {
+    font-weight: bold;
+    color: #7d7878;
+    white-space: nowrap;
+}
+
+.message-display {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 60%; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: inline-block; 
+    margin-top:5px;
+}
+
+.output-area.user .message-display{
+    background: linear-gradient(to right, rgb(184, 162, 138), #d78426);
+    color: rgb(240, 235, 235);
+    font-size: 14px;
+    
+}
+.output-area.bot .message-display{
+    background: linear-gradient(to right, rgb(184, 162, 138), #d78426);
+    color: rgb(240, 235, 235);
+    font-size: 14px;
+    
+}
+.output-are.user{
+    justify-content: flex-end;
+}
+.output-area.bot{
+    justify-content: flex-end;
+}
+
+#message-prompt{
+    width:250px;
+}

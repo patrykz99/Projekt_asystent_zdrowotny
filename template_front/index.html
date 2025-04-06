@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Health consultant </title>
+        <meta name="description" content="Aplikacja z pogodowym chatbotem">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="chat-layout">
+            <div class="top">
+                <div class ="first-row">
+                    Your virtual medical consultant &#128522;
+                    <span id="refresh">&#8634;</span>
+                </div>
+                <div class ="second-row">
+                    by github.com/patrykz99
+                </div>
+            </div>
+            <div id="display-box">
+
+            </div>
+            <div class="bottom">
+                <form>
+                    <input type="text" id="message-prompt" placeholder="Input message/Wpisz wiadomość... ">
+                    <button type="submit">&#11208;</button>
+                </form>
+            </div>
+        </div>
+        <script src="./interaction.js"></script>
+    </body>
+</html>
